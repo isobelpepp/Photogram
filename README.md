@@ -31,6 +31,21 @@ Edge cases/things to consider further on in the project:
 - Posts count gets updates on the user's profule
 - Kaminari gem included so that home page has a pages function (new page after every five posts)
 
+### Homepage
+![Home page](app/assets/images/homepage.png "Homepage")
+
+### User Profile Page
+![User Profile Page](app/assets/images/user_profile.png "User Profile Page")
+
+### Edit User Page
+![Edit User Page](app/assets/images/edit_user_profile.png "Edit User Page")
+
+### Expand an Image
+![Expand an Image](app/assets/images/expand_image.png "Expand an Imag")
+
+### Log in
+![Log in](app/assets/images/login.png "Log in")
+
 
 **Outstanding Tasks**
 - Create web helpers to clean up tests
