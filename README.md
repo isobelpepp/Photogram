@@ -30,3 +30,10 @@ Edge cases/things to consider further on in the project:
   - Avatar will also show on the user's profile
 - Posts count gets updates on the user's profule
 - Kaminari gem included so that home page has a pages function (new page after every five posts)
+
+
+**Outstanding Tasks**
+- Create web helpers to clean up tests
+- 'Edit profile' button is still on other user's profile (although you update your own profile from there not someone else's)
+- Search function to search users and hashtags
+

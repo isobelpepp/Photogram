@@ -1,7 +1,7 @@
 require 'rails_helper.rb'
 feature 'Adding a user avatar' do
   background do
-    create(:user)
+    create(:post)
     visit '/'
     find('.sign-in').click
     fill_in 'Email', with: 'email@email.com'
@@ -14,7 +14,7 @@ feature 'Adding a user avatar' do
     find('.user-icon').click
   end
   scenario 'clicking on an avatar takes you to the profile of the user' do
-    find(:xpath, "//a[contains(@href,'posts/1')]").click
+    find(:xpath, "//a[contains(@href,'/posts/1')]").click
     expect(page).to have_content('Live laugh love!!!')
   end
 end

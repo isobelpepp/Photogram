@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <div class="posts">
 
   <% @posts.each do |post| %>
@@ -5,8 +7,8 @@
     <div class="user">
     <div class="avatar">
       <% if post.user.avatar.attached? %>
-        <%= link_to user_path(post.user) { :class => 'avatar-link' } do %> 
-        <img src="<%= url_for(current_user.avatar) %>"/>
+        <%= link_to user_path(post.user) do %> 
+        <img src="<%= url_for(post.user.avatar) %>"/>
         <% end %>
       <% end %>
     </div>
@@ -26,3 +28,5 @@
 <div class='pagination'>
 <%= paginate @posts %>
 <div>
+
+<%end%>
