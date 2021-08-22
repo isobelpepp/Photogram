@@ -28,6 +28,7 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'rexml'
 gem 'activestorage-validator'
+gem 'kaminari'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

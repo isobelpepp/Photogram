@@ -14,7 +14,7 @@
         </a>
       </div>
       <ul class="posts">
-        <li><span>10</span> posts</li>
+        <li><span><%=@posts.count%></span> posts</li>
         <li><span>200</span> followers</li>
         <li><span>300</span> following</li>
       </ul>
@@ -45,13 +45,9 @@
 </div>
 
 <div class="user-images">
-  <div class="wrapper">
-    <img src="your_image_url">
-  </div>
-  <div class="wrapper">
-    <img src="your_image_url">
-  </div>
-  <div class="wrapper">
-    <img src="your_image_url">
-  </div>
+ <% @posts.each do |post|%>
+    <div class="wrapper">
+      <img src="<%=(url_for(post.image))%>"/> 
+    </div>
+  <% end %>
 </div>
