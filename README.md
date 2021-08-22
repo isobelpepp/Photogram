@@ -20,3 +20,13 @@ Edge cases/things to consider further on in the project:
 - Clicking on another user's photo will take you to their profile
 - You will not be able to edit anyone else's profile
 
+**Posts**
+
+- User can upload a post
+  - Posts show on homepage with most recent post first
+  - A users post will show on their profile
+- User can upload an avatar
+  - Avatar will show on home page next to username and above the picture
+  - Avatar will also show on the user's profile
+- Posts count gets updates on the user's profule
+- Kaminari gem included so that home page has a pages function (new page after every five posts)

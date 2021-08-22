@@ -49,12 +49,12 @@
       border-bottom: 1px solid #efefef;
       display: flex;
       .avatar{
-        width: 30px;
-        margin: 8px;
+        width: 50px;
+        margin: 10px;
         img{
           width: 100%;
-          border: 1px solid #efefef;
-          border-radius: 50%;
+          border: 5px solid #efefef;
+          border-radius: 80%;
         }
       }
       .username{
