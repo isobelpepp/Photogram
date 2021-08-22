@@ -1,6 +1,6 @@
 require 'rails_helper.rb'
 
-feature 'Creating posts' do
+feature 'Adding a user avatar' do
   background do
     create(:user)
     visit '/'
@@ -11,9 +11,17 @@ feature 'Creating posts' do
     find('.user-icon').click
     find('.edit-profile').click
   end
-  scenario 'posts show on a users profile' do
+  scenario 'avatar shows on users page' do
     attach_file('Avatar', 'spec/files/images/attachment.jpeg')
     click_button('Submit')
     expect(page).to have_css("img[src*='attachment.jpeg']")
+  end
+  scenario 'clicking on an avatar takes you to the profile of the user' do
+    attach_file('Avatar', 'spec/files/images/attachment.jpeg')
+    click_button('Submit')
+    expect(page).to have_css("img[src*='attachment.jpeg']")
+    visit '/'
+    find(:xpath, "//a[contains(@href,'users/1')]").click
+    expect(current_path).to eq('/users/1')
   end
 end

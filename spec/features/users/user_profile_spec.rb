@@ -9,7 +9,6 @@ feature 'User authentication' do
     fill_in 'Password', with: 'password'
     click_button 'Log in'
   end
-
   scenario 'clicking on profile icon will take you to profile' do
     find('.user-icon').click
     expect(page).to have_content 'Test'

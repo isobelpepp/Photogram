@@ -5,11 +5,15 @@
     <div class="user">
     <div class="avatar">
       <% if post.user.avatar.attached? %>
+        <%= link_to user_path(post.user) { :class => 'avatar-link' } do %> 
         <img src="<%= url_for(current_user.avatar) %>"/>
+        <% end %>
       <% end %>
     </div>
     <div class="username">
+    <%= link_to user_path(post.user) do %>
       <%= post.user.username %>
+      <% end %>
     </div>
   </div>
   <img class='main-image' src="<%=(url_for(post.image))%>"/> 
@@ -22,5 +26,3 @@
 <div class='pagination'>
 <%= paginate @posts %>
 <div>
-
-
