@@ -30,6 +30,7 @@
                 <a><i class="fa fa-paper-plane"></i></a>
                 <a><i class="fa fa-compass"></i></a>
                 <a><i class="fa fa-heart"></i></a>
+                <a class='new-post' href="<%= new_post_path %>"><i class="fa fa-plus"></i></a>
                <a class='user-icon' href=<%= user_path(current_user)%>>
                 <i class="fa fa-user"></i>
                </a>
@@ -46,6 +47,7 @@
     </nav>
 
     <main class="container" style="min-height: 500px;">
+    <p class="flash-notice"><%= flash[:notice] %></p>
       <%= yield %>
     </main>
 

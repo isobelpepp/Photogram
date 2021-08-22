@@ -1,41 +1,11 @@
-@import "bootstrap";
-@import "font-awesome";
-@import "users";
-
-.container{
-  max-width: 1000px;
-}
-.navbar{
-  border-bottom: 2px solid rgba(0,0,0,.0975);
-}
-.top-right-user-nav{
-  a{
-    padding-left: 15px;
-  }
-  i.fa{
-    font-size: 20px;
-    color: #000000d4;
-  }
-}
-.search-form{
-  input{
-    font-size: 13px;
-    text-align: center;
-  }
-}
-.footer{
-  font-size: 12px;
-  padding-top: 30px;
-  ul{
-    padding-left: 0;
-    > li{
-      display: inline;
-      padding-right: 15px;
-      color: #003569;
-    }
-  }
-  p{
-    color: #999;
+.form-upload{
+  border: 1px solid #dbdbdb;
+  height: auto;
+  margin: auto 160px;
+  padding: 30px;
+  border-radius: 3px;
+  input[type='text']{
+    width: 100%;
   }
 }
 
@@ -65,7 +35,9 @@
       }
     }
     .main-image{
-      width: 100%;
+      max-width: 50%;
+      height: auto;
+      width: auto\9;
       border-bottom: 1px solid #f4f4f4;
     }
     .description{
@@ -73,4 +45,3 @@
     }
   }
 }
-

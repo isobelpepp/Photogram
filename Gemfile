@@ -27,6 +27,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'devise'
 gem 'rexml'
+gem 'activestorage-validator'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
