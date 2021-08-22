@@ -49,7 +49,9 @@
 <div class="user-images">
  <% @posts.each do |post|%>
     <div class="wrapper">
+    <%=link_to post_path(post) do %>
       <img src="<%=(url_for(post.image))%>"/> 
+    <%end%>
     </div>
   <% end %>
 </div>

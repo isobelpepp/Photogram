@@ -1,0 +1,20 @@
+<div class="post-show row">
+  <div class="col-md-9">
+    <img src="<%=(url_for(@post.image))%>"/> 
+        <div class="caption">
+      <%= @post.caption %>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="user">
+      <div class="avatar">
+        <% if @post.user.avatar.attached? %>
+          <%= link_to user_path(@post.user) do %>
+            <img src="<%= url_for(current_user.avatar) %>"/>
+          <% end %>
+        <% end %>
+      </div>
+      <%= link_to @post.user.username, user_path(@post.user), class: 'username' %>
+    </div>
+  </div>
+</div>
